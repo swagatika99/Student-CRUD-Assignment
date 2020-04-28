@@ -13,7 +13,7 @@
      <!-- <bean id="studDao" class="com.cg.iter.dao.StudentDaoImpl">
      </bean> -->
    <bean id="stud" class="com.cg.iter.bean.Student">
-     <constructor-arg index="1" name="name" value="Ansuman"/>
+     <constructor-arg index="1" name="name" value="Swagatika"/>
      <constructor-arg index="0" name="id" value="1234"/>
      <constructor-arg name="subject" value="Java"/>
      <constructor-arg name="mobile" value="9011223344"/>
