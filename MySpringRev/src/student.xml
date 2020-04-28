@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+      http://www.springframework.org/schema/context 
+      http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+     <context:annotation-config />
+     <context:component-scan base-package="com.cg.iter" />
+     <bean id="studService" class="com.cg.iter.service.StudentServiceimpl">
+     </bean>
+     <!-- <bean id="studDao" class="com.cg.iter.dao.StudentDaoImpl">
+     </bean> -->
+   <bean id="stud" class="com.cg.iter.bean.Student">
+     <constructor-arg index="1" name="name" value="Ansuman"/>
+     <constructor-arg index="0" name="id" value="1234"/>
+     <constructor-arg name="subject" value="Java"/>
+     <constructor-arg name="mobile" value="9011223344"/>
+     <!-- <constructor-arg name="address" ref="addr" /> -->
+<!--      <property name="id" value="1234" />
+     <property name="name" value="Ansuman" />
+     <property name="mobile" value="9011223344" />
+     <property name="subject" value="Java" /> -->
+   </bean>   
+   <bean id="addr" class="com.cg.iter.bean.Address">
+      <property name="houseNo" value="205" />
+      <property name="houseName" value="Mannath" />
+      <property name="city" value="Bhubaneshwar" />
+   </bean>
+   <bean id="address" class="com.cg.iter.bean.Address">
+      <property name="houseNo" value="245" />
+      <property name="houseName" value="Ashirvad" />
+      <property name="city" value="Kolkota" />
+   </bean>
+   <bean id="stud1" class="com.cg.iter.bean.Student">
+     <property name="id" value="1255" />
+     <property name="name" value="Shivam" />
+     <property name="mobile" value="9011883344" />
+     <property name="subject" value="Spring" />
+   </bean>
+      
+</beans>
